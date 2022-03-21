@@ -3,11 +3,12 @@
 body {
   margin: auto;
   width: 100%;
+  max-width: 375px;
 }
 
 .container {
   padding: 15px;
-  background-image: url('assets/images/shape3.png');
+  background-image: url('images/shape3.png');
   background-repeat: no-repeat;
 }
 
