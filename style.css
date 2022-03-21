@@ -2,7 +2,7 @@
 
 body {
   width: 100%;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 10px;
 }
 
@@ -12,7 +12,7 @@ body {
 }
 
 .background {
-  padding-bottom: 57%;
+  padding-bottom: 60%;
   background-image: url(images/geometry.png);
   background-size: cover;
   background-position: bottom;
@@ -48,8 +48,9 @@ p {
 }
 
 .padd {
-  padding:15px;
+  padding: 15px;
 }
+
 .rectangle {
   height: 50px;
   left: 16px;
@@ -68,14 +69,13 @@ p {
 nav {
   display: flex;
   justify-content: end;
-  flex: 1;
-  margin: 0px;
 }
 
 .flex {
   display: flex;
   width: 100%;
   margin: 0%;
+  justify-content: end;
 }
 
 .col-button {
@@ -114,6 +114,4 @@ ul li {
   left: 20px;
   top: 992px;
   background: #98dede;
-  float: left;
 }
-
