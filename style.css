@@ -115,3 +115,7 @@ ul li {
   top: 992px;
   background: #98dede;
 }
+
+button {
+  border: none;
+}

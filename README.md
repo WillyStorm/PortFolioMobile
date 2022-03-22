@@ -1,28 +1,24 @@
 # Portfolio-mobile-version
-Microverse project
+Microverse project , Starting project of mobile version skeleton.
+Built from Figma.com Microverse learning template.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+- HTML
+- CSS  
 
 ### Prerequisites
 
+-WebBrowser
+-Code editor:VSCode
+
 ### Setup
 
-### Install
+git clone https://github.com/WillyStorm/PortFolioMobile.git
 
 ### Usage
+
+-Open the project using a live server
 
 ## Authors
 
