@@ -6,15 +6,23 @@ Built from Figma.com Microverse learning template.
 
 - HTML
 - CSS  
+- Github actions
 
 ### Prerequisites
 
--WebBrowser
--Code editor:VSCode
+- WebBrowser
+- Code editor:VSCode
+- node js & npm
 
 ### Setup
 
-git clone https://github.com/WillyStorm/PortFolioMobile.git
+git clone https://github.com/WillyStorm/PortFolioMobile.git 
+
+cd PortFolioMobile
+
+### Setup
+
+- nom Install
 
 ### Usage
 
