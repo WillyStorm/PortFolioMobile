@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  background-image: url('images/shape3.png');
+  background-image: url(./images/shape3.png);
   background-repeat: no-repeat;
 }
 
@@ -20,31 +20,31 @@ body {
 }
 
 .img1 {
-  background-image: url(../images/geometry.png);
+  background-image: url(./images/geometry.png);
 }
 
 .img2 {
-  background-image: url(../images/1.png);
+  background-image: url(./images/1.png);
 }
 
 .img3 {
-  background-image: url(../images/2.png);
+  background-image: url(./images/2.png);
 }
 
 .img4 {
-  background-image: url(images/3.png);
+  background-image: url(./images/3.png);
 }
 
 .img5 {
-  background-image: url(../images/4.png);
+  background-image: url(./images/4.png);
 }
 
 .img6 {
-  background-image: url(../images/5.png);
+  background-image: url(./images/5.png);
 }
 
 .img7 {
-  background-image: url(../images/6.png);
+  background-image: url(./images/6.png);
 }
 
 h1,
@@ -111,12 +111,12 @@ p {
   text-align: center;
   color: #fff;
   width: 100%;
-  margin-bottom: 10%;
+  margin: 10% 0 5% 0;
 }
 
 .left {
   text-align: left;
-  color:#92dcdc;
+  color: #92dcdc;
 }
 
 nav {
@@ -223,7 +223,7 @@ button {
   border: none;
 }
 
-.bigbox {
+.bigbox > li {
   height: auto;
   padding: 10% 20% 20% 20%;
   background-repeat: no-repeat;
@@ -234,20 +234,20 @@ button {
 
 .box1 {
   background-color: #1c528a;
-  background-image: url(../images/taraba.png);
+  background-image: url(./images/taraba.png);
 }
 
 .box2 {
   background-color: #e2505c;
-  background-image: url(../images/frame.png);
+  background-image: url(./images/frame.png);
 }
 
 .box3 {
   background-color: #febf52;
-  background-image: url(../images/bulb.png);
+  background-image: url(./images/bulb.png);
 }
 
-.bigbox > h3 {
+.bigbox > li > h3 {
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -257,6 +257,10 @@ button {
 }
 
 .bigbox > ul {
+  list-style-type: none;
+}
+
+.bigbox > li > ul {
   display: flex;
   flex-direction: column;
   padding-inline-start: 20px;
