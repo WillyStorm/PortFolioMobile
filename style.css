@@ -116,6 +116,7 @@ p {
 
 .left {
   text-align: left;
+  color:#92dcdc;
 }
 
 nav {
@@ -164,14 +165,14 @@ ul {
 }
 
 .languages {
-  padding: 10px;
+  padding: 6px 10px 6px 10px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 10.3334px;
   line-height: 80%;
   background-color: #98dede;
-  margin-right: 13px;
+  margin-right: 10px;
 }
 
 .margin {
