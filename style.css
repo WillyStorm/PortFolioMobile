@@ -197,7 +197,7 @@ ul {
 }
 
 .breake {
-  margin: 60px;
+  padding-top: 40px;
 }
 
 .big-button {
@@ -255,13 +255,11 @@ button {
   line-height: 30px;
 }
 
-.bigbox > ul > li {
+.bigbox > ul {
   display: flex;
   flex-direction: column;
-  list-style: none;
   padding-inline-start: 20px;
   list-style-type: disc;
-  list-style-position: inside;
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -271,10 +269,8 @@ button {
   letter-spacing: -0.0525em;
 }
 
-.bigbox > li > span {
-  position: relative;
-  left: -9px;
-  list-style-type: disc;
-  list-style-position: inside;
-  color: #fff;
+li > span::before {
+  content: '•';
+  position: absolute;
+  left: -1px;
 }
