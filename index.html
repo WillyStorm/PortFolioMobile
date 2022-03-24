@@ -8,7 +8,7 @@
     <title>Mobile Portfolio</title>
 </head>
 <body>
-    <div class="container">
+    <div class="display">
         <header>
             <div class="flexend">
                 <nav><a href="#" onclick="showMenu()"><img class="menu-button" src="images/menu.png" alt="menu"></a></nav>
@@ -135,10 +135,21 @@
                     </ul>
                 </section>
                 <section id="Contact">
-                    <div class="container">
+                    <div class="display">
                         <div class="padd breake">
                             <h2>Get started</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p> 
+                            <form class="form" action="https://formspree.io/f/xoqrloon" method="post">
+                                <label for="name">
+                                    Your name
+                                    <input type="text" name="name" id="name" maxlength="50" placeholder="Enter your name" required>
+                                </label>
+                                <label for="email" id="email_label">
+                                    Your email
+                                    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                                </label>
+                                <textarea id="message" name="message" placeholder="Enter your message here..." maxlength="500" required></textarea>
+                            </form>
                             <button type="button" class="rectangle">Start collaboration</button>             
                         </div>
                     </div>
