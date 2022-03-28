@@ -10,8 +10,19 @@
 <body>
     <div class="display">
         <header>
-            <div class="flexend">
-                <nav><a href="#" onclick="showMenu()"><img class="menu-button" src="images/menu.png" alt="menu"></a></nav>
+            <div class="">
+                <nav>
+                    <input type="checkbox" id="active">
+                    <label for="active" class="menu-btn"><i><img class="menu-button" src="images/menu.png" alt="menu"></i></label>
+                    <div class="wrapper pic2">
+                        <ul class="pic1">
+                        <li><a href="#">Hello</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </header>  
         <section class="padd">
@@ -140,11 +151,11 @@
                             <h2>Get started</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p> 
                             <form class="form" action="https://formspree.io/f/xoqrloon" method="post">
-                                <label for="name">
+                                <label class="label" for="name">
                                     Your name
                                     <input type="text" name="name" id="name" maxlength="50" placeholder="Enter your name" required>
                                 </label>
-                                <label for="email" id="email_label">
+                                <label class="label" for="email" id="email_label">
                                     Your email
                                     <input type="email" name="email" id="email" placeholder="Enter your email address" required>
                                 </label>
@@ -168,5 +179,15 @@
                         </div>
                     </div>
                 </section>
+                <script>
+                    function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                    x.style.display = "none";
+                    } else {
+                    x.style.display = "block";
+                    }
+                    }
+                    </script>
 </body>
 </html>

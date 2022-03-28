@@ -3,7 +3,6 @@
 body {
   width: 100%;
   margin: 0;
-  margin-bottom: 10px;
 }
 
 .display {
@@ -69,7 +68,8 @@ h3 {
   color: #fff;
 }
 
-p {
+p,
+a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -322,7 +322,7 @@ textarea:hover {
   color: #7d7c84;
 }
 
-label {
+.label {
   display: block;
   margin-top: 10px;
   margin-bottom: 2px;
@@ -337,7 +337,7 @@ label {
   line-height: 15px;
 }
 
-label:hover {
+.label:hover {
   border: 1px solid #1a2236;
 }
 
@@ -365,4 +365,94 @@ input:disabled {
 
 input:focus {
   outline: none !important;
+}
+
+
+.pic1 {
+  background-image: url(./images/menu-image.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.pic2 {
+  background-image: url(./images/menu-image2.png);
+  background-repeat: no-repeat;
+
+  background-size: 100%;
+}
+
+nav {
+  margin: 20px;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.wrapper{
+  position: absolute;
+  margin:0;
+  padding: 0;
+  height: 568px;
+  width: 320px;
+  background: #fff;
+  text-align: center;
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+}
+
+#active:checked ~ .wrapper{
+  clip-path: circle(75%);
+}
+
+.menu-btn{
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#active:checked ~ .menu-btn{
+  color: #fff;
+}
+
+#active:checked ~ .menu-btn i:before{
+  content: "\f00d";
+}
+
+.wrapper ul{
+  list-style: none;
+  text-align: center;
+  padding-top: 140px;
+}
+
+.wrapper ul li{
+  margin: 14px;
+}
+
+.wrapper ul li a{
+  color: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+  transition: all 0.3s ease;
+  text-align: center;
+  
+}
+
+
+input[type="checkbox"]{
+  display: none;
+}
+
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
 }
