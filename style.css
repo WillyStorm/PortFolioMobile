@@ -165,6 +165,8 @@ ul {
 }
 
 .languages {
+  float: left;
+  margin-bottom: 20px;
   padding: 6px 10px 6px 10px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
