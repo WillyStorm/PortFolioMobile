@@ -99,6 +99,7 @@ p {
 }
 
 .rectangle {
+  cursor: pointer;
   height: 50px;
   left: 16px;
   top: 390px;
@@ -112,6 +113,34 @@ p {
   color: #fff;
   width: 100%;
   margin: 10% 0 5% 0;
+}
+
+.rectangle:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+}
+
+.rectangle:active {
+  background: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
+}
+
+.press {
+  cursor: pointer;
+}
+
+.press:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+}
+
+.press:active {
+  color: #fff;
+  background: #1a2236;
+  border: 2px solid #fff;
 }
 
 .left {
@@ -157,6 +186,14 @@ a {
 nav img {
   -webkit-transform: scale(0.7);
   padding: 15px;
+}
+
+.press:hover img {
+  filter: invert(100%);
+}
+
+.press:active img {
+  filter: invert(1%);
 }
 
 ul {
