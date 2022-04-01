@@ -769,6 +769,13 @@ input:focus {
     color: #dd0404;
 
   }
+  
+  .anime:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 2s;
+  }
 }
 
 @media (min-width: 1200px) {
