@@ -752,6 +752,23 @@ input:focus {
     background-position-x: right;
     background-size: 70%;
   }
+  .animate {
+    transition: width 2s, height 2s, transform 1s;
+  }
+
+  .animate:hover {
+    width: 100px;
+    height: 100px;
+    transform: rotate(60deg);
+  }
+
+  .animate:active {
+    width: 100px;
+    height: 100px;
+    border: solid 10px #96000c;
+    color: #1c528a;
+
+  }
 }
 
 @media (min-width: 1200px) {
