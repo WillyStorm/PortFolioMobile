@@ -752,6 +752,7 @@ input:focus {
     background-position-x: right;
     background-size: 70%;
   }
+
   .animate {
     transition: width 2s, height 2s, transform 1s;
   }
@@ -767,7 +768,6 @@ input:focus {
     height: 104px;
     border: solid 5px #96000c;
     color: #dd0404;
-
   }
 }
 
