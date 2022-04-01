@@ -757,16 +757,16 @@ input:focus {
   }
 
   .animate:hover {
-    width: 100px;
+    width: 200px;
     height: 100px;
-    transform: rotate(60deg);
+    transform: rotate(30deg);
   }
 
   .animate:active {
-    width: 100px;
-    height: 100px;
-    border: solid 10px #96000c;
-    color: #1c528a;
+    width: 204px;
+    height: 104px;
+    border: solid 5px #96000c;
+    color: #dd0404;
 
   }
 }
