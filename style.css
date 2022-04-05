@@ -425,7 +425,7 @@ input:focus {
   h2 {
     font-family: 'Playfair Display', sans-serif;
     font-style: normal;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 8vw;
     line-height: 8vw;
   }
