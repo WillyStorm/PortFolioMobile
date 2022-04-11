@@ -4,6 +4,7 @@ body {
   width: 100%;
   margin: 0;
   margin-bottom: 10px;
+  scroll-behavior: smooth;
 }
 
 .display {
@@ -12,8 +13,32 @@ body {
   z-index: 5;
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.close {
+  display: none;
+}
+
 .menubar {
-  display: block;
+  display: flex;
+  justify-content: end;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  z-index: 3;
+  transition: all 0.5s ease-out;
+}
+
+.menubar :focus {
+  outline: none;
 }
 
 .hormenu,
@@ -21,6 +46,49 @@ body {
 .grid2,
 .add {
   display: none;
+  width: 100%;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  height: 568px;
+  width: 320px;
+  background-image: url(./images/menu1.png), url(./images/menu2.png);
+  background-position: left top, bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 80%, 100%;
+  border: 1px solid gray;
+  margin: -80px 24px 0 0;
+  transition: all 2s ease-out;
+}
+
+#header {
+  min-height: 80px;
+}
+
+.open.show::after {
+  display: none;
+}
+
+.close.show::after {
+  display: flex;
+}
+
+.show > li {
+  padding: 5%;
+}
+
+.link {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .background {
@@ -163,12 +231,6 @@ p {
   color: #92dcdc;
 }
 
-nav {
-  display: flex;
-  justify-content: end;
-  margin: 4%;
-}
-
 .flexend {
   display: flex;
   width: 100%;
@@ -193,15 +255,15 @@ nav {
   text-decoration: none;
 }
 
-img,
-a {
+img {
   margin-left: 10px;
   overflow: hidden;
 }
 
 nav img {
   -webkit-transform: scale(0.7);
-  padding: 15px;
+  padding: 25px;
+  margin: 20px;
 }
 
 .press:hover img {
@@ -215,6 +277,7 @@ nav img {
 ul {
   list-style: none;
   padding-inline-start: 0.1em;
+  text-decoration: none;
 }
 
 .languages {
@@ -439,7 +502,7 @@ input:focus {
     margin-bottom: 1px;
   }
 
-  .menu-button {
+  .menubar > img {
     display: none;
   }
 
@@ -778,7 +841,7 @@ input:focus {
     overflow-x: hidden;
   }
 
-  .menubar {
+  button.menubar {
     display: none;
   }
 
