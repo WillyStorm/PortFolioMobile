@@ -13,6 +13,14 @@ body {
   z-index: 5;
 }
 
+.removes {
+  display: block;
+}
+
+.inverse {
+  display: none;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -55,7 +63,7 @@ nav > ul > li > a {
 .hormenu,
 .box4,
 .grid2,
-.add {
+.adds {
   display: none;
   width: 100%;
 }
@@ -160,6 +168,15 @@ h3 {
   color: #fff;
 }
 
+h4 {
+  font-family: Poppins, sans-serif;
+  font-size: 5vw;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  color: #fff;
+}
+
 p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -181,6 +198,11 @@ p {
 }
 
 .flexdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexfall {
   display: flex;
   flex-direction: column;
 }
@@ -265,6 +287,15 @@ p {
   text-decoration: none;
 }
 
+.img-slideshow img {
+  width: 100%;
+}
+
+.slideshow img {
+  width: 100%;
+  margin-bottom: 10%;
+}
+
 .press:hover img {
   filter: invert(100%);
 }
@@ -320,22 +351,73 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 178px;
-  height: 44px;
+  width: 30vw;
+  height: 8vw;
   background-color: #1a2236;
   border: 0.333333px solid #fff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 300;
+  font-size: 2.5vw;
+  line-height: 5px;
   text-align: center;
   color: #fff;
-  margin: 25px 0 25px 0;
+  margin: 20px 2% 20px 0;
+}
+
+.big-button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 7vw;
+  background-color: #fff;
+  border: 0.333333px solid #1a2236;
+  color: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3vw;
+  line-height: 2.5vw;
+  text-align: center;
+  margin: 0 3% 20px 0;
+  padding: 0 3% 0 3%;
+}
+
+.reverse {
+  background-color: #fff;
+  border: 0.333333px solid #1a2236;
+  color: #1a2236;
+}
+
+.big-button2:hover,
+.reverse:hover {
+  background: #1a2236;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.big-button2:active,
+.reverse:active {
+  color: #1a2236;
+  background: #fff;
+  border: 2px solid #1a2236;
+}
+
+.lower {
+  width: 70%;
+  height: 10vw;
+  justify-content: end;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 20%;
+  font-size: larger;
+  padding: 0 4% 0 4%;
 }
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 .bigbox > li {
@@ -482,6 +564,64 @@ input:focus {
   outline: none !important;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: -60px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: scroll; /* Enable scroll if needed */
+  background-color: #fff;
+  padding: 2%;
+  min-height: 800px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  width: 92%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner {
+  margin: 70px 0 0 0;
+  padding: 4vw;
+  background-color: #fff;
+  margin-bottom: 10%;
+}
+
+.inner > h4 {
+  color: #1a2236f2;
+  margin: 0;
+  font-size: 6vw;
+}
+
+.inner p {
+  font-size: 4.5vw;
+  line-height: 6vw;
+  margin: 0;
+}
+
+/* The Close Button */
+.closed {
+  color: rgb(0, 0, 0);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.closed.add,
+.closed:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   h1,
   h2 {
@@ -499,6 +639,55 @@ input:focus {
 
   h1 {
     margin-bottom: 1px;
+  }
+
+  h4 {
+    font-size: 4vw;
+    font-weight: 700;
+    line-height: 48px;
+    margin-top: 5%;
+  }
+
+  .flexfall {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .between {
+    justify-content: space-between;
+    margin: 20% 0 10% 0;
+  }
+
+  .removes {
+    display: none;
+  }
+
+  .big-button {
+    width: 20vw;
+    height: 5vw;
+    font-weight: 300;
+    font-size: 1.8vw;
+    line-height: 24px;
+    margin: 20px 2% 20px 0;
+  }
+
+  .big-button2 {
+    width: 10vw;
+    height: auto;
+    background-color: #fff;
+    border: 0.333333px solid #1a2236;
+    color: #1a2236;
+    font-weight: 300;
+    font-size: 1.4vw;
+    line-height: 2.5vw;
+    margin: 20px 1% 20px 0;
+  }
+
+  .sixty {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
   }
 
   .menubar > img {
@@ -519,6 +708,79 @@ input:focus {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: -30px;
+    top: -40px;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: #1a2236f2;
+  }
+
+  .inner {
+    margin: 70px 0 0 0;
+    padding: 4vw;
+    background-color: #fff;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .inner > h4 {
+    color: #1a2236f2;
+    margin: 0;
+    font-size: 4.5vw;
+  }
+
+  .inner p {
+    font-size: 1.3vw;
+    line-height: 2vw;
+    margin: 0;
+  }
+
+  /* The Close Button */
+  .closed {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .closed.add,
+  .closed:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .img-slideshow img {
+    width: 100%;
+  }
+
+  .slideshow img {
+    width: 100%;
+  }
+
+  .inverse {
+    display: block;
+  }
+
+  .lower {
+    width: 35%;
+    height: 3.5vw;
+    justify-content: space-between;
+    margin-right: 5%;
+    padding: 0 4% 0 4%;
+    margin-left: 0;
+    gap: 0%;
+    font-size: medium;
   }
 
   .gridbox {
@@ -602,7 +864,7 @@ input:focus {
     margin: 0 0 30% 0;
   }
 
-  .add {
+  .adds {
     margin-top: 10%;
     z-index: 3;
   }
