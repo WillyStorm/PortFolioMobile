@@ -37,6 +37,11 @@ nav img {
   -webkit-transform: scale(0.7);
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 nav > ul > li > a {
   text-decoration: none;
   color: #000;
@@ -296,6 +301,10 @@ p {
   filter: invert(100%);
 }
 
+.closed span > img {
+  cursor: pointer;
+}
+
 .press:hover {
   background: #fff;
   color: #1a2236;
@@ -462,6 +471,7 @@ ul {
   padding: 0 5% 0 2%;
 }
 
+.lower > a,
 .lower > span {
   flex-grow: 1;
   flex-shrink: 10;
@@ -628,7 +638,7 @@ input:focus {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: scroll; /* Enable scroll if needed */
-  background-color: #fff;
+  background-color: rgb(253, 251, 251);
   padding: 2%;
   min-height: 800px;
 }
@@ -666,14 +676,12 @@ input:focus {
   float: right;
   font-size: 28px;
   font-weight: bold;
-  cursor: pointer;
 }
 
 .closed.add,
 .closed:focus {
   color: black;
   text-decoration: none;
-  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -700,6 +708,7 @@ input:focus {
     font-weight: 700;
     line-height: 48px;
     margin-top: 5%;
+    padding: 0 0 1% 0;
   }
 
   .flexfall {
@@ -789,13 +798,13 @@ input:focus {
   }
 
   .big-button2 {
-    width: 10vw;
+    width: 6.5vw;
     height: auto;
     background-color: #fff;
     border: 0.333333px solid #1a2236;
     color: #1a2236;
     font-weight: 300;
-    font-size: 1.4vw;
+    font-size: 1vw;
     line-height: 2.5vw;
     margin: 20px 1% 20px 0;
   }
@@ -863,6 +872,10 @@ input:focus {
     background-color: #1a2236f2;
   }
 
+  .intro {
+    font-size: 1.8vw;
+  }
+
   .inner {
     margin: 70px 0 0 0;
     padding: 4vw;
@@ -890,14 +903,16 @@ input:focus {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    cursor: pointer;
   }
 
   .closed.add,
   .closed:focus {
     color: black;
     text-decoration: none;
-    cursor: pointer;
+  }
+
+  .hide {
+    display: none;
   }
 
   .inverse {
@@ -1247,6 +1262,10 @@ input:focus {
 @media (min-width: 1200px) {
   body {
     overflow-x: hidden;
+  }
+
+  .inner p {
+    font-size: 1.4vw;
   }
 
   button.menubar {
