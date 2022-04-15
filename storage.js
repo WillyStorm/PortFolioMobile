@@ -1,34 +1,34 @@
-const nameStorage = document.getElementById('name');
-const emailStorage = document.getElementById('email');
-const messageStorage = document.getElementById('message');
+const names = document.getElementById('name');
+const emails = document.getElementById('email');
+const messages = document.getElementById('message');
 
-function setContent() {
-  const setFormContent = JSON.parse(JSON.stringify(localStorage.getItem('formContent')));
-  const newFormObj = JSON.parse(setFormContent);
+function content() {
+  const setContent = JSON.parse(JSON.stringify(localStorage.getItem('formContent')));
+  const newObj = JSON.parse(setFormContent);
 
-  document.getElementById('name').value = newFormObj.nameStorage;
-  document.getElementById('email').value = newFormObj.emailStorage;
-  document.getElementById('message').value = newFormObj.messageStorage;
+  document.getElementById('name').value = newFormObj.names;
+  document.getElementById('email').value = newFormObj.emails;
+  document.getElementById('message').value = newFormObj.messages;
 }
 
-function populateStorage() {
+function storage() {
   const formObj = {
-    nameStorage: document.getElementById('name').value,
-    emailStorage: document.getElementById('email').value,
-    messageStorage: document.getElementById('message').value,
+    names: document.getElementById('name').value,
+    emails: document.getElementById('email').value,
+    messages: document.getElementById('message').value,
   };
 
   localStorage.setItem('formContent', JSON.stringify(formObj));
 
-  setContent();
+  content();
 }
 
 if (!localStorage.getItem('formContent')) {
-  populateStorage();
+  storage();
 } else {
-  setContent();
+  content();
 }
 
-nameStorage.onchange = populateStorage;
-emailStorage.onchange = populateStorage;
-messageStorage.onchange = populateStorage;
+names.onchange = populateStorage;
+emails.onchange = populateStorage;
+messages.onchange = populateStorage;
