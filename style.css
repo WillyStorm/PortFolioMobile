@@ -13,6 +13,14 @@ body {
   z-index: 5;
 }
 
+.removes {
+  display: block;
+}
+
+.inverse {
+  display: none;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -27,6 +35,11 @@ nav img {
 
 .open {
   -webkit-transform: scale(0.7);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 nav > ul > li > a {
@@ -55,7 +68,7 @@ nav > ul > li > a {
 .hormenu,
 .box4,
 .grid2,
-.add {
+.adds {
   display: none;
   width: 100%;
 }
@@ -160,6 +173,15 @@ h3 {
   color: #fff;
 }
 
+h4 {
+  font-family: Poppins, sans-serif;
+  font-size: 5vw;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  color: #fff;
+}
+
 p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -181,6 +203,11 @@ p {
 }
 
 .flexdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexfall {
   display: flex;
   flex-direction: column;
 }
@@ -215,25 +242,9 @@ p {
 }
 
 .rectangle:active {
-  background: #fff;
-  color: #1a2236;
-  border: 2px solid #1a2236;
-}
-
-.press {
-  cursor: pointer;
-}
-
-.press:hover {
-  background: #fff;
-  color: #1a2236;
-  border: 1px solid #1a2236;
-}
-
-.press:active {
-  color: #fff;
   background: #1a2236;
-  border: 2px solid #fff;
+  color: #fff;
+  border: 2px solid #1a2236;
 }
 
 .left {
@@ -265,12 +276,69 @@ p {
   text-decoration: none;
 }
 
+.img-slideshow img {
+  width: 100%;
+}
+
+.slideshow img {
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.rectangle > img {
+  margin-left: 5%;
+}
+
+.lower img {
+  flex-grow: 0;
+}
+
+.reversemb img {
+  filter: invert(100%);
+}
+
+.reverse img {
+  filter: invert(100%);
+}
+
+.closed span > img {
+  cursor: pointer;
+}
+
+.press:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 1px solid #fff;
+}
+
+.press:active {
+  color: #fff;
+  background: #1a2236;
+  border: 2px solid #fff;
+}
+
 .press:hover img {
   filter: invert(100%);
 }
 
 .press:active img {
   filter: invert(1%);
+}
+
+.reverse:hover img {
+  filter: invert(1%);
+}
+
+.reverse:active img {
+  filter: invert(100%);
+}
+
+.reversemb:hover img {
+  filter: invert(1%);
+}
+
+.reversemb:active img {
+  filter: invert(100%);
 }
 
 ul {
@@ -284,7 +352,7 @@ ul {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 10.3334px;
+  font-size: 3vw;
   line-height: 80%;
   background-color: #98dede;
   margin-right: 10px;
@@ -320,22 +388,100 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 178px;
-  height: 44px;
+  width: 40vw;
+  height: 10vw;
+  gap: 1%;
   background-color: #1a2236;
   border: 0.333333px solid #fff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 300;
+  font-size: 3vw;
+  line-height: 5px;
   text-align: center;
   color: #fff;
-  margin: 25px 0 25px 0;
+  margin: 20px 2% 20px 0;
+}
+
+.big-button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 7vw;
+  background-color: #fff;
+  border: 0.333333px solid #1a2236;
+  color: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3vw;
+  line-height: 2.5vw;
+  text-align: center;
+  margin: 0 3% 20px 0;
+  padding: 0 3% 0 3%;
+}
+
+.reverse {
+  background-color: #fff;
+  border: 0.333333px solid #1a2236;
+  color: #1a2236;
+}
+
+.big-button2:hover,
+.reverse:hover {
+  background: #1a2236;
+  color: #fff;
+  border: 1px solid #1a2236;
+}
+
+.big-button2:active,
+.reverse:active {
+  color: #1a2236;
+  background: #fff;
+  border: 2px solid #1a2236;
+}
+
+.reversemb {
+  background-color: #fff;
+  border: 0.333333px solid #1a2236;
+  color: #1a2236;
+}
+
+.reversemb:hover {
+  background: #1a2236;
+  color: #fff;
+  border: 1px solid #1a2236;
+}
+
+.reversemb:active {
+  background: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
+}
+
+.lower {
+  display: flex;
+  width: 95%;
+  height: 16vw;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 6vw;
+  text-align: center;
+  padding: 0 5% 0 2%;
+}
+
+.lower > a,
+.lower > span {
+  flex-grow: 1;
+  flex-shrink: 10;
+  text-align: center;
 }
 
 button {
   border: none;
+  cursor: pointer;
+  background: transparent;
 }
 
 .bigbox > li {
@@ -482,6 +628,62 @@ input:focus {
   outline: none !important;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: -60px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: scroll; /* Enable scroll if needed */
+  background-color: rgb(253, 251, 251);
+  padding: 2%;
+  min-height: 800px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  width: 92%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner {
+  margin: 70px 0 0 0;
+  padding: 4vw;
+  background-color: #fff;
+  margin-bottom: 10%;
+}
+
+.inner > h4 {
+  color: #1a2236f2;
+  margin: 0;
+  font-size: 6vw;
+}
+
+.inner p {
+  font-size: 4.5vw;
+  line-height: 6vw;
+  margin: 0;
+}
+
+/* The Close Button */
+.closed {
+  color: rgb(0, 0, 0);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closed.add,
+.closed:focus {
+  color: black;
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   h1,
   h2 {
@@ -501,8 +703,144 @@ input:focus {
     margin-bottom: 1px;
   }
 
+  h4 {
+    font-size: 4vw;
+    font-weight: 700;
+    line-height: 48px;
+    margin-top: 5%;
+    padding: 0 0 1% 0;
+  }
+
+  .flexfall {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .between {
+    justify-content: space-between;
+    margin: 20% 0 10% 0;
+  }
+
+  .removes {
+    display: none;
+  }
+
+  .press {
+    cursor: pointer;
+  }
+
+  .press:hover {
+    background: #1a2236;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  .press:active {
+    color: #fff;
+    background: #1a2236;
+    border: 2px solid #fff;
+  }
+
+  .press img {
+    filter: invert(100%);
+  }
+
   .menubar > img {
     display: none;
+  }
+
+  .big-button {
+    width: 15vw;
+    height: 3.5vw;
+    font-weight: 200;
+    font-size: 1.4vw;
+    margin: 20px 2% 20px 0;
+    gap: 1%;
+    background-color: #fff;
+    border: 0.333333px solid #1a2236;
+    line-height: 5px;
+    text-align: center;
+    color: #1a2236;
+  }
+
+  .reversemb {
+    background-color: #1a2236;
+    border: 0.333333px solid #1a2236;
+    color: #fff;
+  }
+
+  .reversemb img {
+    filter: invert(1%);
+  }
+
+  .img-slideshow img {
+    width: 100%;
+  }
+
+  .slideshow img {
+    width: 100%;
+  }
+
+  .grid2 img {
+    width: 100%;
+  }
+
+  .lower > span {
+    flex-grow: 0;
+  }
+
+  .lower img {
+    flex-grow: 0;
+  }
+
+  .press:hover img {
+    filter: invert(1%);
+  }
+
+  .big-button2 {
+    width: 6.5vw;
+    height: auto;
+    background-color: #fff;
+    border: 0.333333px solid #1a2236;
+    color: #1a2236;
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 2.5vw;
+    margin: 20px 1% 20px 0;
+  }
+
+  .reversemb:hover {
+    background: #fff;
+    color: #1a2236;
+    border: 1px solid #1a2236;
+  }
+
+  .reversemb:active {
+    background: #fff;
+    color: #1a2236;
+    border: 2px solid #1a2236;
+  }
+
+  .reversemb:hover img {
+    filter: invert(100%);
+  }
+
+  .reversemb:active img {
+    filter: invert(100%);
+  }
+
+  .languages {
+    padding: 10px;
+    font-size: 1vw;
+    line-height: 100%;
+    margin-top: -1%;
+  }
+
+  .sixty {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
   }
 
   .hormenu,
@@ -519,6 +857,96 @@ input:focus {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: -30px;
+    top: -40px;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: #1a2236f2;
+  }
+
+  .intro {
+    font-size: 1.8vw;
+  }
+
+  .inner {
+    margin: 70px 0 0 0;
+    padding: 4vw;
+    background-color: #fff;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .inner > h4 {
+    color: #1a2236f2;
+    margin: 0;
+    font-size: 4.5vw;
+  }
+
+  .inner p {
+    font-size: 1.3vw;
+    line-height: 2vw;
+    margin: 0;
+  }
+
+  /* The Close Button */
+  .closed {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .closed.add,
+  .closed:focus {
+    color: black;
+    text-decoration: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .inverse {
+    display: flex;
+    width: 50%;
+    height: 35px;
+    font-size: 1.7vw;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+    color: #1a2236;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+
+  .end {
+    justify-content: end;
+  }
+
+  .inverse:hover {
+    text-decoration: underline;
+  }
+
+  .lower {
+    width: 35%;
+    height: 3.5vw;
+    justify-content: space-between;
+    margin-right: 5%;
+    padding: 0 2% 0 2%;
+    margin-left: 0;
+    gap: 0%;
+    font-size: medium;
   }
 
   .gridbox {
@@ -553,10 +981,6 @@ input:focus {
     background-image: url(./images/geometryBig.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-  }
-
-  .grid2 img {
-    width: 100%;
   }
 
   .gridbox2 .grid3 > h2 {
@@ -602,7 +1026,7 @@ input:focus {
     margin: 0 0 30% 0;
   }
 
-  .add {
+  .adds {
     margin-top: 10%;
     z-index: 3;
   }
@@ -838,6 +1262,10 @@ input:focus {
 @media (min-width: 1200px) {
   body {
     overflow-x: hidden;
+  }
+
+  .inner p {
+    font-size: 1.4vw;
   }
 
   button.menubar {

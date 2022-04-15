@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script defer src="menu.js"></script>
+    <script defer src="modal.js"></script>
     <title>Willy's portfolio</title>
 </head>
 <body class="scrollable">
+    
     <div class="display">
         <header class="flexend" id="header">           
                 <nav class='navbar'>
@@ -46,13 +48,13 @@
                     <div class ="background img2"><span role="img" aria-label="Laptop type"></span></div>
                 <div class="blue-background">
                     <div class="margin">
-                        <h3>Project name goes here</h3>
+                        <h4>Project name goes here</h4>
                         <ul class="flex">
                             <li class="languages">HTML/CSS</li>
                             <li class="languages">Ruby on Rails</li>
                             <li class="languages">JavaScript</li>
                         </ul>
-                        <button class="big-button center press" type="button">See this project <img src="images/arrow.png" alt="arrow-right"></button>
+                        <button class="big-button center press" type="button" id="details">See this project <img src="images/arrow.png" alt="arrow-right"></button>
                     </div>
                 </div>
                 </div>
@@ -69,7 +71,7 @@
                             <li class="languages">JavaScript</li>
                         </ul>
                     <div class="break"></div>
-                    <button class="big-button center press" type="button">See this project <img src="images/arrow.png" alt="arrow-right"></button>
+                    <button class="big-button center press" type="button"  id="details1">See this project <img src="images/arrow.png" alt="arrow-right"></button>
                 </div>
             </div>
         </div>
@@ -83,7 +85,7 @@
                             <li class="languages">Ruby on Rails</li>
                             <li class="languages">JavaScript</li>
                         </ul>
-                        <button class="big-button center press" type="button">See this project <img src="images/arrow.png" alt="arrow-right"></button>
+                        <button class="big-button center press" type="button"  id="details2">See this project <img src="images/arrow.png" alt="arrow-right"></button>
                     </div>
                 </div>
             </div>
@@ -97,7 +99,7 @@
                             <li class="languages">Ruby on Rails</li>
                             <li class="languages">JavaScript</li>
                         </ul>
-                        <button class="big-button center press" type="button">See this project <img src="images/arrow.png" alt="arrow-right"></button>
+                        <button class="big-button center press" type="button" id="details3">See this project <img src="images/arrow.png" alt="arrow-right"></button>
                     </div>
                     </div>
                 </div>
@@ -111,7 +113,7 @@
                                 <li class="languages">Ruby on Rails</li>
                                 <li class="languages">JavaScript</li>
                             </ul>
-                            <button class="big-button center press" type="button">See this project <img src="images/arrow.png" alt="arrow-right"></button>
+                            <button class="big-button center press" type="button"  id="details4">See this project <img src="images/arrow.png" alt="arrow-right"></button>
                         </div>
                     </div>
                 </div>
@@ -122,7 +124,7 @@
                         <div class="grids gr1"></div>
                         <div class="grids gr2"></div>
                         <div class="grids gr3">
-                            <div class="blue-background add grids">
+                            <div class="blue-background adds grids">
                                 <div class="margin">
                                     <h3>Project name goes here</h3>
                                     <ul class="flex">
@@ -130,8 +132,8 @@
                                         <li class="languages">Ruby on Rails</li>
                                         <li class="languages">JavaScript</li>
                                     </ul>
-                                    <button class="big-button center press"  type="button">
-                                        See this project
+                                    <button class="big-button center press" type="button" id="details5">
+                                        See this project<img src="images/arrow.png" alt="arrow-right">
                                     </button> 
                                 </div>
                                 <div class="addimg"></div>
@@ -222,5 +224,9 @@
                     <div class="more"><button type="button" class="rectangle animate">Get my CV<img src="images/download-blue.png" alt="download"></button></div>
                     <div class="fillcolor"></div>
                 </section>
+                <div id="projectDetails" class="modal">
+                    <div class="modal-content">
+                        <div class="inner closed" id="conts">
+                    </div></div></div>
 </body>
 </html>
