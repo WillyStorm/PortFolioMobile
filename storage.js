@@ -4,11 +4,11 @@ const messages = document.getElementById('message');
 
 function content() {
   const setContent = JSON.parse(JSON.stringify(localStorage.getItem('formContent')));
-  const newObj = JSON.parse(setFormContent);
+  const newObj = JSON.parse(setContent);
 
-  document.getElementById('name').value = newFormObj.names;
-  document.getElementById('email').value = newFormObj.emails;
-  document.getElementById('message').value = newFormObj.messages;
+  document.getElementById('name').value = newObj.names;
+  document.getElementById('email').value = newObj.emails;
+  document.getElementById('message').value = newObj.messages;
 }
 
 function storage() {
@@ -29,6 +29,6 @@ if (!localStorage.getItem('formContent')) {
   content();
 }
 
-names.onchange = populateStorage;
-emails.onchange = populateStorage;
-messages.onchange = populateStorage;
+names.onchange = storage;
+emails.onchange = storage;
+messages.onchange = storage;
