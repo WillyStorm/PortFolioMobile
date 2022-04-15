@@ -8,6 +8,7 @@
     <script defer src="menu.js"></script>
     <script defer src="modal.js"></script>
     <script defer src="validation.js"></script>
+    <script defer src="storage.js"></script>
     <title>Willy's portfolio</title>
 </head>
 <body class="scrollable">
@@ -194,7 +195,7 @@
                         <div class="padd breake">
                             <h2>Get started</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p> 
-                            <form class="form" action="https://formspree.io/f/xoqrloon" method="post">
+                            <form class="form" id="form" action="https://formspree.io/f/xoqrloon" method="post">
                                 <label for="name">
                                     Your name
                                     <input type="text" name="name" id="name" maxlength="50" placeholder="Enter your name" required>
@@ -204,6 +205,7 @@
                                     <input type="email" name="email" id="email" placeholder="Enter your email address" required>
                                 </label>
                                 <textarea id="message" name="message" placeholder="Enter your message here..." maxlength="500" required></textarea>
+                                <p id="errMessage"></p>
                                 <button type="submit" class="rectangle anime">Start collaboration</button>
                             </form>
                         </div>
